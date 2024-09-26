@@ -1,15 +1,15 @@
-import Image from 'next/image';
+'use client';
 import React from 'react';
+import Image from 'next/image';
 
 export const UserProfile = () => (
   <div className='flex items-center space-x-4'>
     <p className='hidden cursor-not-allowed lg:inline'>Kids</p>
     <Image
+      width={30}
+      height={30}
       src='/profile.png'
-      alt='profile'
-      width={40}
-      height={40}
-      className='rounded'
-    />
+      alt='Profile'
+      className='cursor-pointer rounded' />
   </div>
 );

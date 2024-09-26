@@ -1,5 +1,6 @@
-import Image from 'next/image';
+'use client';
 import React from 'react';
+import Image from 'next/image';
 
 export const Logo = () => (
   <Image
@@ -7,6 +8,5 @@ export const Logo = () => (
     alt='Logo'
     width={90}
     height={90}
-    className='cursor-pointer'
-  />
+    className='cursor-pointer' />
 );
