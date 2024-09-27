@@ -1,7 +1,7 @@
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
+import { PlayIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Header from './components/Header';
-import { PlayIcon } from '@heroicons/react/24/solid';
-import { InformationCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
@@ -38,16 +38,24 @@ export default function Home() {
           </button>
         </div>
 
-        <div>
-          {[1, 2, 3, 4, 5].map((index) => (
-            <Image
-              key={index}
-              src={`/item_${index}.png`}
-              fill={true}
-              alt='MAID'
-              className='rounded'
-            />
-          ))}
+        <div className='flex-col space-y-4 '>
+          <div className='flex space-x-4 overflow-x-scroll'>
+            {[1, 2, 3, 4, 5].map((index) => (
+              <div
+                className=' group relative h-28 min-w-[200px] 
+              transform transition duration-200 ease-in  hover:scale-110
+              '
+              >
+                <Image
+                  key={index}
+                  src={`/item_${index}.png`}
+                  fill={true}
+                  alt='MAID'
+                  className='rounded'
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </main>
     </div>
