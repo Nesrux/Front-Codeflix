@@ -1,3 +1,4 @@
+import BuggyButton from '@/app/components/BugButton';
 import { getUserInfo } from '@/app/lib/settings';
 import React from 'react';
 
@@ -10,6 +11,9 @@ async function User() {
         <p>Name : {name}</p>
         <p>Email: {email}</p>
         <p>Age : {age}</p>
+      </div>
+      <div className='mt-5'>
+        <BuggyButton />
       </div>
     </div>
   );
