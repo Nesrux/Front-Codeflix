@@ -1,4 +1,5 @@
 import React from 'react';
+import { InputField } from '../inputfield';
 
 export default function Login() {
   return (
@@ -14,34 +15,18 @@ export default function Login() {
           </p>
         </div>
         <div className='mt-8 flex flex-col space-y-4'>
-          <div className='flex flex-col space-y-1'>
-            <label
-              htmlFor='email'
-              className='text-sm font-semibold text-gray-500'
-            >
-              Email
-            </label>
-            <input
-              type='email'
-              id='email'
-              placeholder='Enter your email'
-              className='rounded-lg  border-gray-600 bg-gray-700 px-4 py-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-red-500'
-            />
-          </div>
-          <div className='flex flex-col space-y-1'>
-            <label
-              htmlFor='password'
-              className='text-sm font-semibold text-gray-500'
-            >
-              Password
-            </label>
-            <input
-              type='password'
-              id='password'
-              placeholder='Enter your password'
-              className='rounded-lg border-gray-600 bg-gray-700 px-4 py-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-red-500'
-            />
-          </div>
+          <InputField
+            id='email'
+            label='Email'
+            placeholder='Enter your email'
+            type='email'
+          />
+          <InputField
+            id='password'
+            type='password'
+            label='Password'
+            placeholder='Enter your password'
+          />
         </div>
         <div className='flex flex-col-reverse space-y-2 pt-2 sm:flex-row sm:space-x-2 sm:space-y-0'>
           <button
