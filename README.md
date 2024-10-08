@@ -1,21 +1,29 @@
-# Front-end do usuario do projeto codeflix
+# Front-Codeflix
 
-## 🚧 PROJETO EM CONSTRUÇÃO 🚧
+Este repositório contém o front-end do projeto Codeflix.
 
-### Tecnologias
+## Tecnologias Utilizadas
 
-1. Typesecript
-2. Next
-3. Tailwindcss
+- TypeScript
+- Next.js
+- TailwindCSS
 
-### ROTAS
+## Instalação
 
-1. /auth/login
-2. /auth/register
-3. /home
-
-### Como executar o projeto
-
-```bash
-yarn dev
-```
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Nesrux/Front-Codeflix.git
+   ```
+2. Entre no diretório do projeto:
+   ```bash
+   cd Front-Codeflix
+   ```
+3. Instale as dependências:
+   ```bash
+   yarn install
+   ```
+4. Execute o projeto:
+   ```bash
+   yarn dev
+   ```
+5. `Acesse http://localhost:3000 no navegador para visualizar a aplicação.`
