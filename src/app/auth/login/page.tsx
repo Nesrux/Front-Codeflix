@@ -47,8 +47,11 @@ export default function Login() {
               />
             </div>
           </div>
-          <div>
-            <button className='flex flex-col-reverse space-y-2 pt-2 sm:flex-row sm:space-x-2 sm:space-y-0'>
+          <div className='flex flex-col-reverse space-y-2 pt-2 sm:flex-row sm:space-x-2 sm:space-y-0'>
+            <button
+              className='flex w-full items-center justify-center space-x-2 rounded-lg bg-red-500 px-4 py-4 text-sm font-semibold text-white hover:bg-red-500 sm:w-auto sm:px-8'
+              type='submit'
+            >
               Summit
             </button>
           </div>
