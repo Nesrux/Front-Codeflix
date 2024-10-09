@@ -19,14 +19,17 @@ export const AuthForm: React.FC<AuthFormProps> = ({ formType, onSubmit }) => {
         </h1>
         <p className='text-sm text-gray-500'>
           {formType === 'login'
-            ? 'New to the app ?'
-            : 'Already have an account ?'}
-          <a href={formType === 'login' ? '/register' : '/login'}>
+            ? 'New to the app ? '
+            : 'Already have an account ? '}
+          <a
+            href={formType === 'login' ? '/register' : '/login'}
+            className='text-red-500 hover:underline'
+          >
             {formType === 'login' ? 'Register' : 'Login'}
           </a>
         </p>
       </div>
-      <div>
+      <div className='mt-8 flex flex-col space-y-4'>
         <InputField
           id='email'
           type='email'
