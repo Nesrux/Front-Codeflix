@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { InputField } from '../inputfield';
+import { InputField } from '../../components/inputfield';
 
 export default function RegisterForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
