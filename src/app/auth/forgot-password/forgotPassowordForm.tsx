@@ -1,6 +1,6 @@
 'use client';
 
-import { InputField } from '@/app/components/inputfield';
+import { InputField } from '@/app/components/Inputfield';
 import React from 'react';
 
 export function ForgotPasswordForm() {

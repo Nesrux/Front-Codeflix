@@ -1,6 +1,6 @@
 'use client';
 
-import { InputField } from './inputfield';
+import { InputField } from './Inputfield';
 
 type AuthFormProps = {
   formType: 'login' | 'register';
