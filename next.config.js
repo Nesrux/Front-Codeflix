@@ -9,3 +9,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// npx json-server -p 8080 db.json
