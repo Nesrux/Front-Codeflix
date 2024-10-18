@@ -1,5 +1,5 @@
 import React from 'react';
-import { searchMovies } from '../services/MovieService';
+import { searchMovies } from '../service/MovieService';
 import Header from '../components/Header';
 import { MovieCard } from '../components/MovieCard';
 
