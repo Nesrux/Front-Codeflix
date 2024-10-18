@@ -4,7 +4,8 @@ import { MovieRow } from './components/MovieRow';
 import { getFeaturedMovie, getMoviesByGenre } from './service/MovieService';
 
 export default async function Home() {
-  const featuredMovie = await getFeaturedMovie('106');
+  const randomNum = Math.floor(Math.random() * (106 - 101 + 1)) + 101;
+  const featuredMovie = await getFeaturedMovie(randomNum.toString());
   const genres = ['Drama', 'Action', 'Comedy', 'Animation'];
 
   const movies = await Promise.all(
