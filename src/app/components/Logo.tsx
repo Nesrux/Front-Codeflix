@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Logo = () => (
   <Image
-    src='/logo.svg'
+    src='/codeflix-logo.png'
     alt='Logo'
     width={90}
     height={90}
